@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    line-height: 1;
+    background-color: #424874;
+}
+
+.cabecalho{
+    display: block;
+    border-bottom: 2px ridge #F18C00;
+    width: 35%;
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 0px;
+    padding-bottom: 0.5em;
+}
+
+.titulo-principal{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #F5F5F5;
+    margin-top: 1em;
+    text-shadow: 0 0 2px black;
+}
+
+.conteudo-principal{
+    margin: 2em 3em;
+}
+
+.sessao{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #F5F5F5;
+}
+
+.primeira-sessao{
+    box-sizing: border-box;
+}
+
+.tabela-calculo{
+    margin: 0 auto;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 1em;
+}
+
+.dados-tabela{
+    background-color: #36002F;
+}
+
+.dados-tabela th{
+    padding: 0.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #F5F5F5;
+}
+
+.segunda-sessao{
+    position: relative;
+}
+
+.form{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    align-items: flex-end;
+}
+
+.margem-formulario{
+    border: none;
+    width: 30%;
+    text-align: end;
+    padding: 0 1em;
+}
+
+.margem-formulario legend{
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.margem-formulario label{
+    font-size: 1.2em;
+    display: block;
+}
+
+input:hover,
+input:focus{
+    background-color: #F7C073;
+}
+
+#botao-adicionar, #botao-excluir{
+    margin: 0 0.5em;
+    background-color: #36002F;
+    color: #F5F5F5;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#botao-adicionar:hover, 
+#botao-adiconar:focus,
+#botao-excluir:hover,
+#botao-excluir:focus{
+    background-color: #920081;
+    cursor: pointer;
+}
+
+/*Classes no JS*/
+
+.empregado tr{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empregado td{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.lista-erros{
+    list-style-type: none;
+    color: #F18C00;
+}
+
+.desaparece{
+    display: none;
+}

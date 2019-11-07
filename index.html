@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Relatório de Comissão</title>
+</head>
+<body>
+  <header class="cabecalho">
+      <h1 class="titulo-principal">Comissão</h1>
+  </header>
+  <main class="conteudo-principal">
+      <section class="sessao primeira-sessao">
+          <table class="tabela-calculo">
+              <thead class="dados-tabela">
+                  <tr>
+                      <th>Nome</th>
+                      <th>Salário</th>
+                      <th>Total Vendas</th>
+                      <th>Valor Comissão</th>
+                  </tr>
+              </thead>
+              <tbody class="dados-tabela-js"></tbody>
+          </table>
+            <label>
+              Buscar: 
+              <input type="text" id="buscar-vendedor" placeholder="Digite o nome do vendedor aqui">
+            </label>
+      </section>
+      <section class="sessao segunda-sessao">
+          <form class="form">
+              <div class="container">
+                <fieldset class="margem-formulario">
+                    <legend>Inserir funcionário</legend>
+                      <label>
+                          Nome: 
+                          <input type="text" name="nome" class="dados" id="nome" autofocus pattern="[a-zA-Z ']">
+                      </label>
+                  
+                      <label>
+                          Salário:
+                          <input type="number" name="salario" class="dados" id="salario" step="0.01">
+                      </label>
+                  
+                      <label>
+                          Vendas total:
+                          <input type="number" name="qtdVendas" class="dados" id="qtdVendas" step="0.01">
+                      </label>
+                </fieldset>
+                <button type="submit" id="botao-adicionar"><strong>Adicionar</strong></button>
+                <button type="submit" id="botao-excluir"><strong>Excluir</strong></button>
+
+              </div>
+              <ul id="mensagem-erro"></ul>
+          </form>
+      </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="js/calculo.js"></script>
+  <script src="js/validacoes.js"></script>
+  <script src="js/comissao.js"></script>
+  <script src="js/delete-vendedor.js"></script>
+  <script src="js/buscar-vendedor.js"></script>
+</body>
+</html>
